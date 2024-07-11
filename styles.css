@@ -7,14 +7,15 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(135deg, #000428, #004e92);
+    background: url('1300884_463b.jpg') no-repeat center center fixed;
+    background-size: cover;
     color: #fff;
     overflow: hidden;
 }
 
 .container {
     text-align: center;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.6); /* Darkened the background color */
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -27,7 +28,7 @@ body {
 
 .container:hover {
     transform: translateY(-10px);
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.7); /* Darken more on hover */
 }
 
 @keyframes fadeIn {
@@ -66,9 +67,13 @@ input {
     width: calc(100% - 30px);
     font-size: 1rem;
     background: rgba(255, 255, 255, 0.2);
-    color: #fff;
+    color: #fff; /* Make input text white */
     outline: none;
     transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+input::placeholder {
+    color: #fff; /* Make placeholder text white */
 }
 
 input:focus {
